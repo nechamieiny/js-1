@@ -5,12 +5,46 @@
   <title>תרגיל JavaScript 1 - חלק א׳</title>
   <script>
     // א1
-    const fullname =nechami-einy;
+    const fullname ="nechami-einy";
     let age= 19;
-    const city =BneiBrak;
-    let isStudent=true;
-    console.log('my name is:${name}, my age: ${age}, I live in ${city}');
-    
+    const city ="BneiBrak";
+    let isStudent= true;
+    console.log(`my name is: ${fullname}, my age: ${age}, I live in: ${city}, are you student?: ${isStudent}`);
+    console.log(`my name is: ${fullname}, my age: ${age+1}, I live in: ${city} , are you student?: ${isStudent}`);
+    // א2
+console.log(typeof 42); // number
+console.log(typeof 3.14); // number
+console.log(typeof "שלום"); // string
+console.log(typeof true); // boolean
+console.log(typeof undefined); // undefined
+console.log(typeof null); // object
+
+console.log("5" + 3);//"53"
+console.log("5" - 3);//2
+console.log("5" * "2");//10
+console.log(7 / 2);//3.5
+// א3
+console.log(5 == "5");//true
+console.log(5 === "5");//false
+console.log(0 == false);//true
+console.log(0 === false);// false
+console.log(null == undefined); // true
+console.log(null === undefined);// false
+console.log(NaN === NaN);// false
+console.log("a" === "a");//true
+
+// א3 - Boolean
+console.log(Boolean(0));// false
+console.log(Boolean(""));// false
+console.log(Boolean("0"));//true
+console.log(Boolean([]));// true
+console.log(Boolean(null));// false
+console.log(Boolean(undefined));// false
+console.log(Boolean("false"));//true
+console.log(Boolean(-1));//true
+
+// עדיף להשתמש ב-=== כשמשווים ערכים, כדי לוודא שגם הערך וגם הטיפוס זהים ולמנוע המרות אוטומטיות.
+
 
   </script>
 </head>
