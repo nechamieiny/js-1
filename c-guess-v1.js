@@ -1,4 +1,9 @@
 // ג1
+let playAgain = true;
+
+while (playAgain) {
+
+
 const secret = Math.floor(Math.random() * 20) + 1;
 
 let guess = 0;
@@ -17,4 +22,6 @@ while (guess !== secret) {
     }
 }
 alert("מדהים! ניחשת אחרי " + attempts + " ניסיונות");
+    playAgain = confirm("לשחק שוב?");
+}
 
